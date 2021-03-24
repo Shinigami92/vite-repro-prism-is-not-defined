@@ -6,6 +6,7 @@ import Router from "vue-router";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
 import App from "./App.vue";
+import MyView from "@/MyView.vue";
 
 Vue.use(Router);
 
@@ -21,7 +22,7 @@ new Vue({
       {
         name: "MyView",
         path: "/my-view",
-        component: () => import("@/MyView.vue"),
+        component: MyView,
       },
     ],
     mode: "history",
